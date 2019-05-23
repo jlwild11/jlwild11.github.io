@@ -1,0 +1,14 @@
+DIR_NOT_EXISTS: Directory %path% does not exist
+
+DIR_NOT_CREATED: Could not create directory %path%
+DIR_NOT_WRITABLE: Directory %path% is not writable
+FILE_NOT_EXISTS: Not found path %path%
+FILE_NOT_WRITABLE: Path %path% is not writable
+
+PAGE_DIR_NOT_READABLE: Could not read the pages directory %path%
+NO_PAGE_EXISTS: No page file (*.html) could be found in %path%
+INDEX_PAGE_NOT_EXISTS: Could not find the index page (index.html) in %path%
+
+PAGE_NOT_EXISTS: Could not load page file %path%
+
+INVALID_SERVICE_REQUEST: Invalid service request %uri%
