@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html class="full" lang="en">
-    <!-- Make sure the <html>
-    tag is set to the .full CSS class. Change the background image in the full.css file. --> 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Jameson Wilder</title>
-        <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <!-- Sitecake styles CSS -->
-        <link href="css/sitecake.css" rel="stylesheet">
-        <!--lato font from Google Fonts-->
-        <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
+<!-- Make sure the <html>
+    tag is set to the .full CSS class. Change the background image in the full.css file. -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jameson Wilder</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Sitecake styles CSS -->
+    <link href="css/sitecake.css" rel="stylesheet">
+    <!--lato font from Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <!-- Import Top Row Navigation Header -->
-        <link rel="import" href="nav_header_top.html">
-    </head>
-    <body>
-        <!-- <div class="container">
+    <!-- Import Top Row Navigation Header -->
+    <script src='../js/includeHTML.js'></script>
+</head>
+
+<body>
+    <!-- <div class="container">
         <ul class="navigation sc-nav">
             <li><a class="active" href="./" title="Index">Index</a></li>
         </ul>
     </div>
-    --> 
+    -->
     <div>
+    <!-- Add Custom Top Row Navigation Header-->    
+        <div w3-include-html="nav_header_top.html"></div>
+
         <script>
-                    var link = document.querySelector('link[rel="import"]');
-                    var content = link.import;
-                
-                    // Grab DOM from warning.html's document.
-                    var el = content.querySelector('.container');
-                
-                    document.body.appendChild(el.cloneNode(true));
-                </script>
+            includeHTML();
+        </script>
+
     </div>
     <div class="pageheader">
         <div class="container">
@@ -137,4 +137,5 @@
     </div>
     <!-- //container -->
 </body>
+
 </html>
