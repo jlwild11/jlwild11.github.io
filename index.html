@@ -18,16 +18,33 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+        
+        <!-- Import Top Row Navigation Header  -->
+        <link rel="import" href="nav_header_top.html">
+        
     </head>
     <body>
-        <div class="container">
+    <!--    <div class="container">
             <ul class="navigation sc-nav">
                 <li><a class="active" href="./" title="Home">Home</a></li>
                 <li><a class="" href="article.html" title="Page Manager">Page Manager</a></li>
                 <li><a class="" href="default.html" title="Default Article">Default Article</a></li>
                 <li><a class="" href="newpage.html" title="Newpage">Newpage</a></li>
             </ul>
+        </div> -->
+        
+        <div>
+            <script>
+                    var link = document.querySelector('link[rel="import"]');
+                    var content = link.import;
+                
+                    // Grab DOM from warning.html's document.
+                    var el = content.querySelector('.container');
+                
+                    document.body.appendChild(el.cloneNode(true));
+                </script>
         </div>
+        
         <div class="pageheader">
             <div class="container">
                 <div class="row">
