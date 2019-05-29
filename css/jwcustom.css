@@ -38,3 +38,26 @@
             margin: 4px;
             border-radius: 5px;
         }
+        .nav_2nd {
+            list-style: none;
+            padding: 0px 0px 0px 40px;
+            margin: 0;
+        }
+        
+        .nav_2nd ul {
+            display: inline-block;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav_2nd li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;;
+        }
+        
+        .nav_2nd li a:hover:not(.active) {
+            background-color: red;
+            color: white;
+        }
