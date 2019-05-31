@@ -20,12 +20,12 @@
         }
         
         .list_main li a.active {
-            background-color: #0275d8;
+            background-color: #0086d0;
             color: white;
         }
         
         .list_main li a:hover:not(.active) {
-            background-color: #0275d8;
+            background-color: #0086d0;
             color: white;
             border-radius: 5px;
         }
@@ -38,6 +38,34 @@
             margin: 4px;
             border-radius: 5px;
         }
+        .nav_top {
+            list-style: none;
+            padding: 0px 0px 0px 40px;
+            margin: 0;
+        }
+        
+        .nav_top ul {
+            display: inline-block;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        
+        .nav_top li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            width: 10em;
+            height: 2.5em;
+    		text-align: center;
+        }
+        
+        .nav_top li a:hover:not(.active) {
+            background-color: #0086d0;
+            color: white;
+        }
+        
         .nav_2nd {
             list-style: none;
             padding: 0px 0px 0px 40px;
@@ -54,10 +82,13 @@
         .nav_2nd li a {
             display: block;
             padding: 10px 20px;
-            text-decoration: none;;
+            text-decoration: none;
+            width: 10em;
+            height: 2.5em;
+    		text-align: center;
         }
         
         .nav_2nd li a:hover:not(.active) {
-            background-color: red;
+            background-color: #0086d0;
             color: white;
         }
