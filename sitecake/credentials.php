@@ -1,1 +1,0 @@
-<?php $credentials = "348d11568edbf2b952efc3a14d6dc7d04fd49f6b";
